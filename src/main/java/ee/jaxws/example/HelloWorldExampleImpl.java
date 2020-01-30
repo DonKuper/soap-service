@@ -5,8 +5,8 @@ import javax.xml.ws.Endpoint;
 
 @WebService(endpointInterface = "ee.jaxws.example.HelloWorldExample")
 public class HelloWorldExampleImpl implements HelloWorldExample{
-    public String sayHello() {
-        return "Hello World";
+    public String sayHello(String text) {
+        return "Hello World " + text;
     }
 
     public static void main(String[] args) {

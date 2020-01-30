@@ -16,7 +16,7 @@ public class CallHelloWorld {
                 "HelloWorldExampleImplService");
         Service service = Service.create(url,qName);
         HelloWorldExample helloWorldExample = service.getPort(HelloWorldExample.class);
-        System.out.println(helloWorldExample.sayHello());
+        System.out.println(helloWorldExample.sayHello("Ilya"));
 
     }
 }
